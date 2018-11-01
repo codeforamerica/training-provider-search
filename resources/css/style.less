@@ -1,0 +1,105 @@
+@mobile: ~"only screen and (max-width: 667px)";
+@desktop: ~"only screen and (min-width: 668px)";
+
+* {
+	-webkit-font-smoothing: antialiased;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+::selection {
+	
+}
+
+html, body {
+	margin: 20px!important;
+	
+	a {
+		color: #000;
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+	label {
+		display: inline-block;
+		width: 150px;
+		color: rgba(0, 0, 0, 0.75);
+	}
+	
+	input[type="text"],
+	input[type="date"] {
+		width: 250px;
+		font-size: 14px;
+		padding: 5px;
+		margin-bottom: 10px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+	
+	input[type="submit"] {
+		font-size: 20px;
+		width: 100px;
+	}
+	
+	textarea {
+		width: 404px;
+		height: 200px;
+		font-size: 14px;
+		padding: 5px;
+		margin-bottom: 10px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+	
+	a#reset {
+		display: none;
+	}
+
+	.emoji {
+		display: inline-block;
+		font-size: 32px;
+		vertical-align: -7px;
+		margin-right: 10px;
+	}
+	
+	h1 .emoji {
+		font-size: 48px;
+	}
+	
+	.button {
+		padding: 5px 10px;
+		background: rgba(0, 0, 0, 0.1);
+		display: inline-block;
+		border-radius: 5px;
+		
+		&:hover {
+			background: rgba(0, 0, 0, 0.15);
+		}
+		
+		&:active {
+			background: rgba(0, 0, 0, 0.2);
+		}
+	}
+	
+	pre {
+		display: inline-block!important;
+		background: white;
+	}
+	
+	.stats {
+	    display: inline-block;
+	    vertical-align: top;
+	    margin-right: 100px;
+	}
+	
+	@media @mobile {
+		
+	}
+	
+	@media @desktop {
+	
+	}
+	
+}
